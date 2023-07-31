@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css" : "tailwindcss build -i login-page/src/styles.css -o login-page/public/styles.css --watch"
+    "build" : "tailwindcss build -i login-page/src/styles.css -o login-page/public/styles.css --watch"
   },
   "keywords": [],
   "author": "",
