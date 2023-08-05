@@ -1,0 +1,15 @@
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
+  border: 1px solid gray;
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 150px;
+  max-width: 300px; 
+}
+
+
