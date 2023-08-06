@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo list</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4">Todo List</h1>
+      <form action="" class="search">
+        <input type="text" class="form-control m-auto" name="search" placeholder="search todos">
+      </form>
+    </header>
+    <ul class="list-group todos mx-auto text-light">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>play milimilitia</span>
+        <i class="delete">X</i>
+      </li> 
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>play pool</span>
+        <i class="delete">X</i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>play card</span>
+        <i class="delete">X</i>
+      </li>  
+    </ul>
+    <form action="" class="add text-center my-4">
+      <label for="" class="text-light">Add a new todo...</label>
+      <input type="text" class="form-control m-auto" name="add">
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
