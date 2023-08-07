@@ -1,5 +1,12 @@
+.container {
+  max-width: 400px;
+  min-height: 100%;
+}
+
 ul li {
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 .completed {
