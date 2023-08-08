@@ -9,7 +9,7 @@ const scoreLabel = document.querySelector('.label-score');
 const highScoreLabel = document.querySelector('.label-highscore');
 
 const randNumber = Math.trunc(Math.random() * 20) + 1;
-number.textContent = randNumber;
+
 
 let score = 20;
 let highScore = 0;
@@ -21,6 +21,7 @@ check.addEventListener('click', () => {
   if(!guessedValue) {
     message.textContent = 'Enter only numbers';
   } else if(guessedValue == randNumber) {
+    number.textContent = randNumber;
     message.textContent = 'Correct number ):';
     number.style.width = '7rem';
     if(score > highScore) {
