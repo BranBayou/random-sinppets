@@ -28,24 +28,14 @@ check.addEventListener('click', () => {
       highScore = score;
       highScoreLabel.textContent = `High Score: ${highScore}`;
     }
-  } else if(guessedValue > randNumber) {
+  } else if(guessedValue !== randNumber) {
     if(score > 1) {
-      message.textContent = 'Too high!';
+      message.textContent = guessedValue > randNumber ? 'Too high!' : 'Too low';
       score -= 1;
       scoreLabel.textContent = score;
     } else {
       message.textContent = 'You lost!';
       scoreLabel.textContent = 0;
     }
-  } else if(guessedValue < randNumber) {
-    if(score > 1) {
-      message.textContent = 'Too low!';
-      score -= 1;
-      scoreLabel.textContent = score;
-    } else {
-      message.textContent = 'You lost!';
-      scoreLabel.textContent = 0;
-    }
-    
-  } 
+  }
 });
