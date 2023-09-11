@@ -1,0 +1,17 @@
+.main {
+  width: 300px;
+  margin: 0 auto;
+  background-color: rgb(218, 235, 217);
+}
+
+.container {
+  width: 10vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+}
+.container button {
+  width: 2rem;
+  height: 2rem;
+}
