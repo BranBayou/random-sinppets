@@ -17,8 +17,8 @@ const user = {
   userOneInput: 'X',
   userTwoInput: 'O'
 }
-gameButton.forEach(button => {
-  button.addEventListener('click', (e) =>{
-    button.innerHTML = user.userOneInput;
-  });
-});
+// gameButton.forEach(button => {
+//   button.addEventListener('click', (e) =>{
+//     button.innerHTML = user.userOneInput;
+//   });
+// });
