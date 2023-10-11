@@ -35,3 +35,29 @@ body {
   border: 15px solid black;
   box-sizing: border-box;
 }
+
+.cross {
+  height: 90px;
+  width: 90px;
+  position: relative;
+}
+
+.cross:before, .cross:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+}
+
+.corss:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+
+.corss:after {
+  top: 50%;
+  height: 30%;
+  margin-left: -15%;
+  width: 100%;
+}
