@@ -8,6 +8,8 @@ function createBoard() {
   startCell.forEach((cell, index) => {
     const cellElement = document.createElement("div");
     cellElement.classList.add("square");
+    cellElement.addEventListener("click",addGo);
+    cellElement.id = index;
     gameBoard.append(cellElement);
   });
 }
