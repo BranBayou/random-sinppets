@@ -40,6 +40,7 @@ body {
   height: 90px;
   width: 90px;
   position: relative;
+  transform: rotate(45deg);
 }
 
 .cross:before, .cross:after {
@@ -48,16 +49,16 @@ body {
   background-color: red;
 }
 
-.corss:before {
+.cross:before {
   left: 50%;
   width: 30%;
   margin-left: -15%;
   height: 100%;
 }
 
-.corss:after {
+.cross:after {
   top: 50%;
   height: 30%;
-  margin-left: -15%;
+  margin-top: -15%;
   width: 100%;
 }
