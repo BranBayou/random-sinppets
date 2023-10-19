@@ -68,6 +68,11 @@ button:hover {
   border-radius: 10px;
 }
 
+.login-modal::backdrop {
+  background: linear-gradient(45deg, red, blue);
+  opacity: .4;
+}
+
 .modal-con {
   display: flex;
   flex-direction: column;
@@ -90,4 +95,5 @@ button:hover {
   padding: 8px;
   border-radius: 8px;
   border: none;
+  font-size: 14px;
 }
