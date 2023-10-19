@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  max-width: 920px;
+  margin: 0 auto;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid crimson; 
+}
+
+.logo h1 em {
+  color: crimson;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li {
+  list-style-type: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.menu ul li a:hover {
+  background: crimson;
+  border-radius: 10px;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: crimson;
+  padding: 8px;
+  color: white;
+}
+
+button:hover {
+  background: darkgray;
+  cursor: pointer;
+}
+
+.login-modal {
+  padding: 20px;
+  width: 480px;
+  max-width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.modal-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-con h2 {
+  margin: 20px;
+  border-bottom: 2px solid crimson;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-field input {
+  width: 400px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
