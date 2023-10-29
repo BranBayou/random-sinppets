@@ -27,3 +27,9 @@ body {
     border: 5px solid black;
     margin: 10px;
 }
+
+.parent .child-1 {
+  position: relative;
+  top: 50px;
+  right: 50px;
+}
