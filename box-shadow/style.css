@@ -1,0 +1,10 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  box-shadow: 5px 5px 20px 0px #ec0b0b;
+}
