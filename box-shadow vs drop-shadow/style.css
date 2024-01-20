@@ -3,18 +3,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 
-.box {
+img{
+  width: 150px;
+}
+
+.box-shadow img{
   box-shadow: 5px 5px 20px 0px #ec0b0b;
 }
 
-.img-con img{
-  width: 150px;
-}
-
-.img-con:hover img{
-  width: 150px;
-  filter: drop-shadow(5px 5px 10px #888888);
+.drop-shadow img{
+  filter: drop-shadow(5px 5px 10px #ec0b0b);
 }
