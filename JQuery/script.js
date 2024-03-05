@@ -24,4 +24,18 @@ $('h1').html("<strong>Hello</strong> World!");
 $('h2').attr('style', 'color: red');
 $('a').attr('href', 'https://www.google.com')
 
-$('button');
+
+//Jquery add event listeners
+$('h2').click(function () {
+    $('h2').css('color', 'purple');
+});
+
+//Jquery more add event listeners
+$('button').click(function () {
+    $('h1').css('color', 'blue');
+});
+
+//Jquery more add event listeners
+$('h2').on('mouseover',function () {
+    $('h2').css('color', 'orange');
+});
