@@ -7,6 +7,8 @@ main {
   margin: 0 auto;
 }
 
+/* Scroll watcher */
+
 .scroll-watcher {
   height: 10px;
   width: 100%;
@@ -22,3 +24,50 @@ main {
 @keyframes scroll-watcher {
   to {scale: 1 1;}
 }
+
+/* fade in image animation */
+
+main .img-con {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main .img-con img {
+  width: 35%;
+  scale: 1;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry 250px;
+}
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+/* Horizontally scrolling text */
+
+/* .scroller[data-animated = "true"] {
+  overflow: hidden;
+}
+
+.scroller[data-animated = "true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scrolling linear;
+}
+
+.scroller[data-direction = "right"].scroller__inner {
+  animation-direction: reverse;
+}
+
+@keyframes scrolling {
+  to {
+    transform: translate(-50% -.5rem);
+  }
+} */
+
