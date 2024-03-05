@@ -39,3 +39,12 @@ $('button').click(function () {
 $('h2').on('mouseover',function () {
     $('h2').css('color', 'orange');
 });
+
+//Jquery add and remove elements
+$('h2').before('<p>Good</p>');
+$('h2').after('<p>bro</p>');
+
+$('h1').prepend('<p>Well</p>');
+$('h1').append('<p>people</p>');
+
+//Jquery common animation
