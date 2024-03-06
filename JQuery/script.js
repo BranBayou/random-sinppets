@@ -47,4 +47,17 @@ $('h2').after('<p>bro</p>');
 $('h1').prepend('<p>Well</p>');
 $('h1').append('<p>people</p>');
 
-//Jquery common animation
+//Jquery common animation hide
+
+$('button').on('click', function () {
+    // $('h2').hied();
+    // $('h2').toggle();
+    // $('h2').fadeOut();
+    // $('h2').fadeIn();
+    // $('h2').fadeToggle();
+    // $('h2').slideUp();
+    // $('h2').slideDown();
+    // $('h2').slideToggle();
+    // $('h2').animate({opacity: .5});
+    $('h2').slideUp().slideDown().animate({margin: "20px"});
+})
