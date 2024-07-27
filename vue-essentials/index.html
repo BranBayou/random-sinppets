@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./main.js" type="script"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="./main.js" defer></script>
     <title>Vue essentials</title>
 </head>
 <body>
     <div id="main-div">
         <h1>List of Goals.</h1>
+        <div>
+            <input v-model="newGoal" @keyup.enter="addNewGoal" type="text" name="text" id="goal-text">
+            <button @click="addNewGoal">Add</button>
+        </div>
         <ul>
-            <li v-u></li>
+            <li v-for="goal in goals">
+                {{ goal }}
+            </li>
         </ul>
-    </div>
+    </div
 </body>
 </html>

@@ -1,12 +1,16 @@
 Vue.createApp({
     data() {
         return {
-            goal: 'Master vue.'
+            newGoal: '',
+            goals: [],
         }
     },
     methods: {
         addNewGoal() {
-
+            if (this.newGoal.trim() !== '') {
+                this.goals.push(this.newGoal);
+                this.newGoal = '';
+            }
         }
     }
 }).mount('#main-div');
