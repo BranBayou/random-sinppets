@@ -10,11 +10,13 @@
 <body>
     <div id="main-div">
         <h1>List of Goals.</h1>
+        <p v-if="goals.length === 0">List Your Goals Here!</p>
+        <p v-else-if="goals.length === 1">You Need Goals Here!</p>
         <div>
             <input v-model="newGoal" @keyup.enter="addNewGoal" type="text" name="text" id="goal-text">
             <button @click="addNewGoal">Add</button>
         </div>
-        <ul>
+        <ul v-else>
             <li v-for="goal in goals">
                 {{ goal }}
             </li>
