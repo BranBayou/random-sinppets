@@ -24,24 +24,8 @@
         </div>
     </div> 
     <div id="friends-list">
-        <ul>
-            <li v-for="friend in friends">
-                <ul>
-                    <li>
-                        {{ friend.name }}
-                    </li>
-                    <p class="show-more">show more</p>
-                    <ul class="hide hidden-content">
-                        <li>
-                            {{ friend.phone }} 
-                        </li>
-                        <li>
-                            {{ friend.email }} 
-                        </li>
-                    </ul>
-                </ul>
-            </li>
-
+        <ul>       
+            <list-all></list-all>
         </ul>
     </div>
 </body>
