@@ -39,6 +39,17 @@ const friendsList = Vue.createApp({
     },
 });
 friendsList.mount('#friends-list');
+
+friendsList.component('list-all', {
+    
+});
+
+
+
+
+
+
+
 $(document).ready(function() {
     $('.show-more').on('click', function() {
         $('.hide').toggleClass('hidden-content');
