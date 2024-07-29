@@ -15,3 +15,32 @@ Vue.createApp({
     }
 }).mount('#main-div');
 
+const friendsList = Vue.createApp({
+    data() {
+        return {
+            friends: [
+                {   
+                    name: 'Ayu Doe', 
+                    phone: '+251911121314',
+                    email: 'ayu@localhost.com',
+                },
+                {
+                    name: 'Abrsh Doe',
+                    phone: '+251911121314',
+                    email: 'Ab@localhost.com'
+                },
+                {
+                    name: 'Alice Doe',
+                    phone: '+251911121315',
+                    email: 'mati@localhost.com'
+                }
+            ],
+        };
+    },
+});
+friendsList.mount('#friends-list');
+$(document).ready(function() {
+    $('.show-more').on('click', function() {
+        $('.hide').toggleClass('hidden-content');
+    }) 
+});
