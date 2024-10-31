@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handlebars Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+</head>
+<body>
+  <!-- Template goes here -->
+  <script id="template" type="text/x-handlebars-template">
+    <h1>Hello, {{name}}!</h1>
+    <p>Your favorite color is {{favoriteColor}}.</p>
+  </script>
+  <script id="list-template" type="text/x-handlebars-template">
+    <h1>{{name}}'s Favorite Fruits</h1>
+    <ul>
+      {{#each favoriteFruits}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </script>
+
+  <!-- Placeholder for rendered HTML -->
+  <div id="content"></div>
+  <div id="list-content"></div>
+
+  <script>
+    // Step 4: JavaScript to compile and render template
+    const templateSource = document.getElementById('template').innerHTML;
+    const template = Handlebars.compile(templateSource);
+
+    // Data to be injected into the template
+    const data = { 
+      name: 'Alice', 
+      favoriteColor: 'blue' 
+    };
+
+    // Render template with data
+    const compiledHtml = template(data);
+    document.getElementById('content').innerHTML = compiledHtml;
+
+    const listTemplateSource = document.getElementById('list-template').innerHTML;
+  const listTemplate = Handlebars.compile(listTemplateSource);
+
+  const listData = {
+    name: 'Alice',
+    favoriteFruits: ['Apple', 'Banana', 'Cherry']
+  };
+
+  const compiledListHtml = listTemplate(listData);
+  document.getElementById('list-content').innerHTML = compiledListHtml;
+  </script>
+</body>
+</html>
